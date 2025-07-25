@@ -56,12 +56,12 @@ export default function Home() {
         
         <div className="relative z-10 max-w-4xl mx-auto">
           {/* Logo Placeholder */}
-          <div className="w-20 h-20 mx-auto mb-6 rounded-2xl gradient-purple flex items-center justify-center text-white text-2xl font-bold shadow-lg">
+          <div className="w-20 h-20 mx-auto mb-6 rounded-2xl bg-white flex items-center justify-center text-[var(--purple-deep)] text-2xl font-bold shadow-lg">
             CV
           </div>
           
           {/* Pixelated Main Heading */}
-          <h1 className="pixelated-font gradient-text text-6xl md:text-8xl lg:text-9xl mb-4">
+          <h1 className="pixelated-font text-white text-6xl md:text-8xl lg:text-9xl mb-4">
             Creaovibe
           </h1>
           
@@ -79,7 +79,7 @@ export default function Home() {
           <Button 
             onClick={handleRegisterClick}
             size="lg"
-            className="gradient-purple hover:scale-105 hover:shadow-xl transition-all duration-300 text-lg px-8 py-4 rounded-full"
+            className="bg-white text-[var(--purple-deep)] hover:bg-gray-100 hover:scale-105 hover:shadow-xl transition-all duration-300 text-lg px-8 py-4 rounded-full font-semibold"
           >
             Register Now
           </Button>
@@ -117,11 +117,18 @@ export default function Home() {
                   <h4 className="text-2xl md:text-3xl font-semibold mb-4 text-white">
                     About the Buildathon
                   </h4>
-                  <p className="text-lg text-[var(--text-secondary)] max-w-4xl mx-auto leading-relaxed">
+                  <p className="text-lg text-[var(--text-secondary)] max-w-4xl mx-auto leading-relaxed mb-6">
                     Our inaugural buildathon brings together the brightest student minds to solve real-world challenges. 
                     Over the course of several weeks, participants will ideate, build, and present innovative solutions 
                     across three crucial sectors that shape our future.
                   </p>
+                  <Button 
+                    onClick={handleRegisterClick}
+                    size="lg"
+                    className="bg-white text-[var(--purple-deep)] hover:bg-gray-100 hover:scale-105 transition-all duration-300 px-8 py-3 rounded-full font-semibold"
+                  >
+                    Register Now
+                  </Button>
                 </div>
 
                 {/* Three Finale Themes */}
@@ -275,6 +282,17 @@ export default function Home() {
                       </div>
                     </div>
                   </div>
+                </div>
+                
+                {/* Final CTA */}
+                <div className="text-center mt-12">
+                  <Button 
+                    onClick={handleRegisterClick}
+                    size="lg"
+                    className="bg-white text-[var(--purple-deep)] hover:bg-gray-100 hover:scale-105 transition-all duration-300 px-12 py-4 rounded-full font-semibold text-xl"
+                  >
+                    Register Now for Buildathon 0.1
+                  </Button>
                 </div>
               </CardContent>
             </Card>
