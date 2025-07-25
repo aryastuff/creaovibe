@@ -8,10 +8,8 @@ import {
   Heart, 
   Leaf, 
   Coins,
-  Twitter,
   Linkedin,
-  Instagram,
-  MessageCircle
+  Instagram
 } from "lucide-react";
 
 export default function Home() {
@@ -302,17 +300,11 @@ export default function Home() {
         <div className="max-w-6xl mx-auto px-5 text-center">
           <p className="mb-4">&copy; 2025 Creaovibe. All rights reserved.</p>
           <div className="flex justify-center gap-4">
-            <a href="#" className="text-white hover:text-gray-300 transition-colors duration-300" aria-label="Twitter">
-              <Twitter className="w-6 h-6" />
-            </a>
-            <a href="#" className="text-white hover:text-gray-300 transition-colors duration-300" aria-label="LinkedIn">
+            <a href="https://www.linkedin.com/company/creaovibe/" target="_blank" rel="noopener noreferrer" className="text-white hover:text-gray-300 transition-colors duration-300" aria-label="LinkedIn">
               <Linkedin className="w-6 h-6" />
             </a>
-            <a href="#" className="text-white hover:text-gray-300 transition-colors duration-300" aria-label="Instagram">
+            <a href="https://www.instagram.com/creaovibe?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" className="text-white hover:text-gray-300 transition-colors duration-300" aria-label="Instagram">
               <Instagram className="w-6 h-6" />
-            </a>
-            <a href="#" className="text-white hover:text-gray-300 transition-colors duration-300" aria-label="Discord">
-              <MessageCircle className="w-6 h-6" />
             </a>
           </div>
         </div>
