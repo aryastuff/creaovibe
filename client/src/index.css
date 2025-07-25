@@ -115,7 +115,165 @@
 
 /* Hero Background Pattern */
 .hero-bg-pattern {
-  background-image: url('data:image/svg+xml,<svg width="60" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><circle fill="%239B5DE5" opacity="0.05" cx="30" cy="30" r="2"/></g></svg>');
+  background-image: url('data:image/svg+xml,<svg width="60" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><circle fill="%23FFFFFF" opacity="0.1" cx="30" cy="30" r="2"/></g></svg>');
+}
+
+/* Floating Geometric Shapes */
+.geometric-shape {
+  position: absolute;
+  opacity: 0.1;
+  animation: floatGeometric 8s ease-in-out infinite;
+}
+
+.geometric-shape.shape-1 {
+  top: 10%;
+  left: 10%;
+  animation-delay: 0s;
+}
+
+.geometric-shape.shape-2 {
+  top: 20%;
+  right: 15%;
+  animation-delay: 2s;
+}
+
+.geometric-shape.shape-3 {
+  bottom: 30%;
+  left: 15%;
+  animation-delay: 4s;
+}
+
+.geometric-shape.shape-4 {
+  bottom: 20%;
+  right: 20%;
+  animation-delay: 6s;
+}
+
+@keyframes floatGeometric {
+  0%, 100% { 
+    transform: translateY(0px) rotate(0deg); 
+  }
+  25% { 
+    transform: translateY(-20px) rotate(90deg); 
+  }
+  50% { 
+    transform: translateY(-10px) rotate(180deg); 
+  }
+  75% { 
+    transform: translateY(-30px) rotate(270deg); 
+  }
+}
+
+/* Gradient Orbs */
+.gradient-orb {
+  position: absolute;
+  border-radius: 50%;
+  background: linear-gradient(45deg, rgba(255,255,255,0.2), rgba(255,255,255,0.05));
+  backdrop-filter: blur(10px);
+  animation: floatOrb 10s ease-in-out infinite;
+}
+
+.gradient-orb.orb-1 {
+  width: 120px;
+  height: 120px;
+  top: 15%;
+  right: 10%;
+  animation-delay: 1s;
+}
+
+.gradient-orb.orb-2 {
+  width: 80px;
+  height: 80px;
+  bottom: 25%;
+  left: 8%;
+  animation-delay: 3s;
+}
+
+.gradient-orb.orb-3 {
+  width: 60px;
+  height: 60px;
+  top: 60%;
+  right: 25%;
+  animation-delay: 5s;
+}
+
+@keyframes floatOrb {
+  0%, 100% { 
+    transform: translateY(0px) scale(1); 
+  }
+  33% { 
+    transform: translateY(-15px) scale(1.1); 
+  }
+  66% { 
+    transform: translateY(-25px) scale(0.9); 
+  }
+}
+
+/* Particle Elements */
+.particle {
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 50%;
+  animation: particleFloat 15s linear infinite;
+}
+
+.particle:nth-child(odd) {
+  animation-delay: -2s;
+}
+
+.particle:nth-child(even) {
+  animation-delay: -8s;
+}
+
+@keyframes particleFloat {
+  0% {
+    transform: translateY(100vh) rotate(0deg);
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-10vh) rotate(360deg);
+    opacity: 0;
+  }
+}
+
+/* Gradient Lines */
+.gradient-line {
+  position: absolute;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+  animation: lineMove 12s ease-in-out infinite;
+}
+
+.gradient-line.line-1 {
+  width: 200px;
+  top: 25%;
+  left: -100px;
+  animation-delay: 0s;
+}
+
+.gradient-line.line-2 {
+  width: 150px;
+  top: 75%;
+  right: -75px;
+  animation-delay: 4s;
+}
+
+@keyframes lineMove {
+  0%, 100% {
+    transform: translateX(0);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
 }
 
 /* Smooth Animations */

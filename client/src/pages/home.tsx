@@ -49,8 +49,52 @@ export default function Home() {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="min-h-screen flex flex-col items-center justify-center text-center px-5 relative hero-bg-pattern">
+      <section className="min-h-screen flex flex-col items-center justify-center text-center px-5 relative hero-bg-pattern overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-[var(--bg-primary)] to-[var(--purple-deep)]"></div>
+        
+        {/* Floating Geometric Shapes */}
+        <div className="geometric-shape shape-1">
+          <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="15" y="15" width="30" height="30" fill="white" opacity="0.3"/>
+          </svg>
+        </div>
+        <div className="geometric-shape shape-2">
+          <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <polygon points="40,10 70,60 10,60" fill="white" opacity="0.2"/>
+          </svg>
+        </div>
+        <div className="geometric-shape shape-3">
+          <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="25" cy="25" r="20" fill="white" opacity="0.25"/>
+          </svg>
+        </div>
+        <div className="geometric-shape shape-4">
+          <svg width="70" height="70" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <polygon points="35,5 65,25 50,55 20,55 5,25" fill="white" opacity="0.2"/>
+          </svg>
+        </div>
+        
+        {/* Gradient Orbs */}
+        <div className="gradient-orb orb-1"></div>
+        <div className="gradient-orb orb-2"></div>
+        <div className="gradient-orb orb-3"></div>
+        
+        {/* Gradient Lines */}
+        <div className="gradient-line line-1"></div>
+        <div className="gradient-line line-2"></div>
+        
+        {/* Floating Particles */}
+        {Array.from({ length: 8 }, (_, i) => (
+          <div
+            key={i}
+            className="particle"
+            style={{
+              left: `${Math.random() * 100}%`,
+              animationDelay: `${Math.random() * 15}s`,
+              animationDuration: `${15 + Math.random() * 10}s`
+            }}
+          />
+        ))}
         
         <div className="relative z-10 max-w-4xl mx-auto">
 
