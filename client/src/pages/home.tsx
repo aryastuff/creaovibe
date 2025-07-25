@@ -96,6 +96,20 @@ export default function Home() {
           />
         ))}
         
+        {/* Animated Rocket */}
+        <div className="rocket-container">
+          <div className="rocket">
+            <div className="rocket-nose"></div>
+            <div className="rocket-body"></div>
+            <div className="rocket-fins"></div>
+            <div className="smoke-trail">
+              {Array.from({ length: 8 }, (_, i) => (
+                <div key={i} className="smoke-wave"></div>
+              ))}
+            </div>
+          </div>
+        </div>
+        
         <div className="relative z-10 max-w-4xl mx-auto">
 
           
