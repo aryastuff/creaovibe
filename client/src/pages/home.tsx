@@ -160,7 +160,7 @@ export default function Home() {
                   </h4>
                   <p className="text-lg text-[var(--text-secondary)] max-w-4xl mx-auto leading-relaxed mb-6">
                     Our inaugural buildathon brings together the brightest student minds to solve real-world challenges. 
-                    Over the course of several weeks, participants will ideate, build, and present innovative solutions 
+                    Over the course of several days, participants will ideate, build, and present innovative solutions 
                     across three crucial sectors that shape our future. <strong className="text-white">Only individual registrations are allowed.</strong>
                   </p>
                   <Button 
