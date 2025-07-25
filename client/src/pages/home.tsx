@@ -96,19 +96,7 @@ export default function Home() {
           />
         ))}
         
-        {/* Animated Rocket */}
-        <div className="rocket-container">
-          <div className="rocket">
-            <div className="rocket-nose"></div>
-            <div className="rocket-body"></div>
-            <div className="rocket-fins"></div>
-            <div className="smoke-trail">
-              {Array.from({ length: 8 }, (_, i) => (
-                <div key={i} className="smoke-wave"></div>
-              ))}
-            </div>
-          </div>
-        </div>
+
         
         <div className="relative z-10 max-w-4xl mx-auto">
 
@@ -173,7 +161,7 @@ export default function Home() {
                   <p className="text-lg text-[var(--text-secondary)] max-w-4xl mx-auto leading-relaxed mb-6">
                     Our inaugural buildathon brings together the brightest student minds to solve real-world challenges. 
                     Over the course of several weeks, participants will ideate, build, and present innovative solutions 
-                    across three crucial sectors that shape our future.
+                    across three crucial sectors that shape our future. <strong className="text-white">Only individual registrations are allowed.</strong>
                   </p>
                   <Button 
                     onClick={handleRegisterClick}
@@ -191,15 +179,15 @@ export default function Home() {
                     Finale Themes
                   </h4>
                   <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                    {/* Healthtech Theme */}
+                    {/* Edtech Theme */}
                     <Card className="bg-white/20 backdrop-blur-sm border border-white/30 shadow-md hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
                       <CardContent className="p-6 text-center">
                         <h5 className="text-xl font-semibold text-white mb-3 flex items-center justify-center gap-2">
-                          <Heart className="w-6 h-6 text-pink-300" />
-                          Healthtech
+                          <Lightbulb className="w-6 h-6 text-yellow-300" />
+                          Edtech
                         </h5>
                         <p className="text-white/90 text-sm leading-relaxed">
-                          Revolutionize healthcare through innovative technology solutions that improve patient outcomes and accessibility.
+                          Transform education through innovative technology solutions that enhance learning experiences and accessibility.
                         </p>
                       </CardContent>
                     </Card>
@@ -250,31 +238,13 @@ export default function Home() {
                         <Card className="ml-6 bg-white/20 backdrop-blur-sm border border-white/30 shadow-md">
                           <CardContent className="p-6">
                             <div className="text-sm font-semibold text-white/80 mb-2">
-                              July 15 - August 1, 2025
+                              July 26 - August 4, 2025
                             </div>
                             <div className="text-xl font-semibold text-white mb-2">
                               Registration Phase
                             </div>
                             <div className="text-white/90 text-sm">
-                              Open registration for all student participants. Form teams and submit your initial project ideas.
-                            </div>
-                          </CardContent>
-                        </Card>
-                      </div>
-
-                      {/* Ideation & Planning */}
-                      <div className="relative">
-                        <div className="absolute -left-3 top-7 w-3 h-3 rounded-full bg-[var(--purple-primary)] border-4 border-white shadow-md"></div>
-                        <Card className="ml-6 bg-white/20 backdrop-blur-sm border border-white/30 shadow-md">
-                          <CardContent className="p-6">
-                            <div className="text-sm font-semibold text-white/80 mb-2">
-                              August 5 - August 12, 2025
-                            </div>
-                            <div className="text-xl font-semibold text-white mb-2">
-                              Ideation & Planning
-                            </div>
-                            <div className="text-white/90 text-sm">
-                              Refine your concepts, conduct market research, and develop comprehensive project plans with mentorship support.
+                              Open registration for individual participants only. Register and prepare for the challenge ahead.
                             </div>
                           </CardContent>
                         </Card>
@@ -286,31 +256,67 @@ export default function Home() {
                         <Card className="ml-6 bg-white/20 backdrop-blur-sm border border-white/30 shadow-md">
                           <CardContent className="p-6">
                             <div className="text-sm font-semibold text-white/80 mb-2">
-                              August 15 - August 29, 2025
+                              August 5 - August 11, 2025
                             </div>
                             <div className="text-xl font-semibold text-white mb-2">
                               Building Phase
                             </div>
                             <div className="text-white/90 text-sm">
-                              Two weeks of intensive development. Build your MVP, conduct user testing, and iterate based on feedback.
+                              We'll provide you with a problem statement. Build your innovative solution and create a working prototype.
                             </div>
                           </CardContent>
                         </Card>
                       </div>
 
-                      {/* Finals Week */}
+                      {/* Finalists Announcement */}
                       <div className="relative">
                         <div className="absolute -left-3 top-7 w-3 h-3 rounded-full bg-[var(--purple-primary)] border-4 border-white shadow-md"></div>
                         <Card className="ml-6 bg-white/20 backdrop-blur-sm border border-white/30 shadow-md">
                           <CardContent className="p-6">
                             <div className="text-sm font-semibold text-white/80 mb-2">
-                              September 1 - September 5, 2025
+                              August 12, 2025
                             </div>
                             <div className="text-xl font-semibold text-white mb-2">
-                              Finals Week
+                              Finalists Announcement
                             </div>
                             <div className="text-white/90 text-sm">
-                              Present your projects to industry experts. Pitch competitions across all three themes with cash prizes and internship opportunities.
+                              Selected finalists will be announced and categorized into Fintech, Edtech, and Sustainability domains.
+                            </div>
+                          </CardContent>
+                        </Card>
+                      </div>
+
+                      {/* Duo Formation */}
+                      <div className="relative">
+                        <div className="absolute -left-3 top-7 w-3 h-3 rounded-full bg-[var(--purple-primary)] border-4 border-white shadow-md"></div>
+                        <Card className="ml-6 bg-white/20 backdrop-blur-sm border border-white/30 shadow-md">
+                          <CardContent className="p-6">
+                            <div className="text-sm font-semibold text-white/80 mb-2">
+                              August 12 - August 17, 2025
+                            </div>
+                            <div className="text-xl font-semibold text-white mb-2">
+                              Duo Formation with Thynkly
+                            </div>
+                            <div className="text-white/90 text-sm">
+                              Finalists will use our Thynkly feature to find and form duos with participants sharing the same vision and domain.
+                            </div>
+                          </CardContent>
+                        </Card>
+                      </div>
+
+                      {/* Pitch Submission */}
+                      <div className="relative">
+                        <div className="absolute -left-3 top-7 w-3 h-3 rounded-full bg-[var(--purple-primary)] border-4 border-white shadow-md"></div>
+                        <Card className="ml-6 bg-white/20 backdrop-blur-sm border border-white/30 shadow-md">
+                          <CardContent className="p-6">
+                            <div className="text-sm font-semibold text-white/80 mb-2">
+                              August 18, 2025
+                            </div>
+                            <div className="text-xl font-semibold text-white mb-2">
+                              Pitch Video Submission Deadline
+                            </div>
+                            <div className="text-white/90 text-sm">
+                              Submit your final pitch video showcasing your solution, impact, and vision for the future.
                             </div>
                           </CardContent>
                         </Card>
@@ -322,13 +328,13 @@ export default function Home() {
                         <Card className="ml-6 bg-white/20 backdrop-blur-sm border border-white/30 shadow-md">
                           <CardContent className="p-6">
                             <div className="text-sm font-semibold text-white/80 mb-2">
-                              September 8, 2025
+                              August 20, 2025
                             </div>
                             <div className="text-xl font-semibold text-white mb-2">
                               Winners Announcement
                             </div>
                             <div className="text-white/90 text-sm">
-                              Grand celebration and networking event. Winners receive cash prizes, mentorship programs, and startup incubation opportunities.
+                              Grand celebration and recognition event. Winners will receive exciting prizes and recognition for their innovative solutions.
                             </div>
                           </CardContent>
                         </Card>
