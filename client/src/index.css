@@ -276,6 +276,166 @@
   }
 }
 
+/* Rocket Animation */
+.rocket-container {
+  position: absolute;
+  top: -100px;
+  left: 10%;
+  animation: rocketFlight 12s linear infinite;
+  z-index: 5;
+}
+
+.rocket {
+  width: 40px;
+  height: 60px;
+  position: relative;
+  opacity: 0.7;
+  transform: rotate(35deg);
+}
+
+.rocket-body {
+  width: 20px;
+  height: 40px;
+  background: linear-gradient(135deg, rgba(255,255,255,0.8), rgba(255,255,255,0.4));
+  border-radius: 10px 10px 5px 5px;
+  margin: 0 auto;
+  position: relative;
+  backdrop-filter: blur(5px);
+}
+
+.rocket-nose {
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 20px solid rgba(255,255,255,0.6);
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.rocket-fins {
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.rocket-fins::before,
+.rocket-fins::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-top: 8px solid rgba(255,255,255,0.5);
+  border-bottom: 8px solid transparent;
+}
+
+.rocket-fins::before {
+  border-left: 15px solid transparent;
+  border-right: 8px solid transparent;
+  left: -23px;
+}
+
+.rocket-fins::after {
+  border-right: 15px solid transparent;
+  border-left: 8px solid transparent;
+  right: -23px;
+}
+
+.smoke-trail {
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 200px;
+  pointer-events: none;
+}
+
+.smoke-wave {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background: rgba(255,255,255,0.3);
+  border-radius: 50%;
+  animation: smokeFloat 2s ease-out infinite;
+}
+
+.smoke-wave:nth-child(1) { 
+  left: 45%; 
+  animation-delay: 0s; 
+}
+.smoke-wave:nth-child(2) { 
+  left: 35%; 
+  animation-delay: 0.2s; 
+}
+.smoke-wave:nth-child(3) { 
+  left: 55%; 
+  animation-delay: 0.4s; 
+}
+.smoke-wave:nth-child(4) { 
+  left: 30%; 
+  animation-delay: 0.6s; 
+}
+.smoke-wave:nth-child(5) { 
+  left: 60%; 
+  animation-delay: 0.8s; 
+}
+.smoke-wave:nth-child(6) { 
+  left: 40%; 
+  animation-delay: 1s; 
+}
+.smoke-wave:nth-child(7) { 
+  left: 50%; 
+  animation-delay: 1.2s; 
+}
+.smoke-wave:nth-child(8) { 
+  left: 25%; 
+  animation-delay: 1.4s; 
+}
+
+@keyframes rocketFlight {
+  0% {
+    transform: translateX(0) translateY(-100px);
+    opacity: 0.7;
+  }
+  10% {
+    opacity: 0.8;
+  }
+  90% {
+    opacity: 0.6;
+  }
+  100% {
+    transform: translateX(80vw) translateY(120vh);
+    opacity: 0;
+  }
+}
+
+@keyframes smokeFloat {
+  0% {
+    transform: translateY(0) translateX(0) scale(0.5);
+    opacity: 0.6;
+  }
+  25% {
+    transform: translateY(20px) translateX(-10px) scale(0.8);
+    opacity: 0.4;
+  }
+  50% {
+    transform: translateY(40px) translateX(15px) scale(1);
+    opacity: 0.3;
+  }
+  75% {
+    transform: translateY(60px) translateX(-20px) scale(1.2);
+    opacity: 0.2;
+  }
+  100% {
+    transform: translateY(100px) translateX(25px) scale(1.5);
+    opacity: 0;
+  }
+}
+
 /* Smooth Animations */
 .fade-in {
   opacity: 1 !important;
