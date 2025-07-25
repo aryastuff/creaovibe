@@ -25,12 +25,12 @@
   --radius: 0.5rem;
   
   /* Custom Creaovibe Colors */
-  --bg-primary: hsl(0, 0%, 97.3%);
+  --bg-primary: hsl(267, 72%, 47%);
   --purple-primary: hsl(262, 83%, 58%);
-  --purple-deep: hsl(267, 72%, 47%);
-  --purple-pastel: hsl(262, 50%, 95%);
-  --text-primary: hsl(0, 0%, 20%);
-  --text-secondary: hsl(0, 0%, 40%);
+  --purple-deep: hsl(267, 72%, 35%);
+  --purple-pastel: hsl(262, 50%, 65%);
+  --text-primary: hsl(0, 0%, 95%);
+  --text-secondary: hsl(0, 0%, 85%);
   --shadow-soft: 0 4px 20px rgba(0, 0, 0, 0.1);
   --shadow-hover: 0 8px 30px rgba(0, 0, 0, 0.15);
 }

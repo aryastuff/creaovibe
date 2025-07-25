@@ -52,7 +52,7 @@ export default function Home() {
     <div className="min-h-screen">
       {/* Hero Section */}
       <section className="min-h-screen flex flex-col items-center justify-center text-center px-5 relative hero-bg-pattern">
-        <div className="absolute inset-0 bg-gradient-to-br from-[var(--bg-primary)] to-gray-50"></div>
+        <div className="absolute inset-0 bg-gradient-to-br from-[var(--bg-primary)] to-[var(--purple-deep)]"></div>
         
         <div className="relative z-10 max-w-4xl mx-auto">
           {/* Logo Placeholder */}
@@ -103,18 +103,18 @@ export default function Home() {
             </div>
 
             {/* Buildathon 0.1 Content */}
-            <Card className="bg-[var(--purple-pastel)] border-none shadow-lg rounded-3xl overflow-hidden">
+            <Card className="bg-white/10 backdrop-blur-sm border border-white/20 shadow-lg rounded-3xl overflow-hidden">
               <CardContent className="p-8 md:p-12 lg:p-16">
                 {/* Buildathon Header */}
                 <div className="text-center mb-12">
-                  <h3 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[var(--purple-deep)] mb-4">
+                  <h3 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4">
                     Creaovibe Buildathon 0.1 – August 2025
                   </h3>
                 </div>
 
                 {/* About Section */}
                 <div className="mb-12 text-center">
-                  <h4 className="text-2xl md:text-3xl font-semibold mb-4 text-[var(--purple-deep)]">
+                  <h4 className="text-2xl md:text-3xl font-semibold mb-4 text-white">
                     About the Buildathon
                   </h4>
                   <p className="text-lg text-[var(--text-secondary)] max-w-4xl mx-auto leading-relaxed">
@@ -126,45 +126,45 @@ export default function Home() {
 
                 {/* Three Finale Themes */}
                 <div className="mb-12">
-                  <h4 className="text-2xl md:text-3xl font-semibold text-center mb-8 text-[var(--purple-deep)] flex items-center justify-center flex-wrap gap-3">
-                    <Rocket className="pixel-icon rocket w-8 h-8 text-[var(--purple-primary)]" />
+                  <h4 className="text-2xl md:text-3xl font-semibold text-center mb-8 text-white flex items-center justify-center flex-wrap gap-3">
+                    <Rocket className="pixel-icon rocket w-8 h-8 text-blue-300" />
                     Finale Themes
                   </h4>
                   <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                     {/* Healthtech Theme */}
-                    <Card className="bg-white shadow-md hover:shadow-lg transition-shadow duration-300 hover:-translate-y-1">
+                    <Card className="bg-white/20 backdrop-blur-sm border border-white/30 shadow-md hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
                       <CardContent className="p-6 text-center">
-                        <h5 className="text-xl font-semibold text-[var(--purple-deep)] mb-3 flex items-center justify-center gap-2">
-                          <Heart className="w-6 h-6 text-[var(--purple-primary)]" />
+                        <h5 className="text-xl font-semibold text-white mb-3 flex items-center justify-center gap-2">
+                          <Heart className="w-6 h-6 text-pink-300" />
                           Healthtech
                         </h5>
-                        <p className="text-[var(--text-secondary)] text-sm leading-relaxed">
+                        <p className="text-white/90 text-sm leading-relaxed">
                           Revolutionize healthcare through innovative technology solutions that improve patient outcomes and accessibility.
                         </p>
                       </CardContent>
                     </Card>
 
                     {/* Sustainability Theme */}
-                    <Card className="bg-white shadow-md hover:shadow-lg transition-shadow duration-300 hover:-translate-y-1">
+                    <Card className="bg-white/20 backdrop-blur-sm border border-white/30 shadow-md hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
                       <CardContent className="p-6 text-center">
-                        <h5 className="text-xl font-semibold text-[var(--purple-deep)] mb-3 flex items-center justify-center gap-2">
-                          <Leaf className="w-6 h-6 text-[var(--purple-primary)]" />
+                        <h5 className="text-xl font-semibold text-white mb-3 flex items-center justify-center gap-2">
+                          <Leaf className="w-6 h-6 text-green-300" />
                           Sustainability
                         </h5>
-                        <p className="text-[var(--text-secondary)] text-sm leading-relaxed">
+                        <p className="text-white/90 text-sm leading-relaxed">
                           Create sustainable solutions that address environmental challenges and promote eco-friendly practices.
                         </p>
                       </CardContent>
                     </Card>
 
                     {/* Fintech Theme */}
-                    <Card className="bg-white shadow-md hover:shadow-lg transition-shadow duration-300 hover:-translate-y-1">
+                    <Card className="bg-white/20 backdrop-blur-sm border border-white/30 shadow-md hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
                       <CardContent className="p-6 text-center">
-                        <h5 className="text-xl font-semibold text-[var(--purple-deep)] mb-3 flex items-center justify-center gap-2">
-                          <Coins className="w-6 h-6 text-[var(--purple-primary)]" />
+                        <h5 className="text-xl font-semibold text-white mb-3 flex items-center justify-center gap-2">
+                          <Coins className="w-6 h-6 text-yellow-300" />
                           Fintech
                         </h5>
-                        <p className="text-[var(--text-secondary)] text-sm leading-relaxed">
+                        <p className="text-white/90 text-sm leading-relaxed">
                           Build the future of financial services with cutting-edge technology and user-centric design.
                         </p>
                       </CardContent>
@@ -174,8 +174,8 @@ export default function Home() {
 
                 {/* Timeline */}
                 <div>
-                  <h4 className="text-2xl md:text-3xl font-semibold text-center mb-10 text-[var(--purple-deep)] flex items-center justify-center flex-wrap gap-3">
-                    <Lightbulb className="pixel-icon lightbulb w-8 h-8 text-[var(--purple-primary)]" />
+                  <h4 className="text-2xl md:text-3xl font-semibold text-center mb-10 text-white flex items-center justify-center flex-wrap gap-3">
+                    <Lightbulb className="pixel-icon lightbulb w-8 h-8 text-yellow-300" />
                     Timeline
                   </h4>
                   <div className="relative pl-8 md:pl-10">
@@ -187,15 +187,15 @@ export default function Home() {
                       {/* Registration Phase */}
                       <div className="relative">
                         <div className="absolute -left-3 top-7 w-3 h-3 rounded-full bg-[var(--purple-primary)] border-4 border-white shadow-md"></div>
-                        <Card className="ml-6 bg-white shadow-md">
+                        <Card className="ml-6 bg-white/20 backdrop-blur-sm border border-white/30 shadow-md">
                           <CardContent className="p-6">
-                            <div className="text-sm font-semibold text-[var(--purple-deep)] mb-2">
+                            <div className="text-sm font-semibold text-white/80 mb-2">
                               July 15 - August 1, 2025
                             </div>
-                            <div className="text-xl font-semibold text-[var(--text-primary)] mb-2">
+                            <div className="text-xl font-semibold text-white mb-2">
                               Registration Phase
                             </div>
-                            <div className="text-[var(--text-secondary)] text-sm">
+                            <div className="text-white/90 text-sm">
                               Open registration for all student participants. Form teams and submit your initial project ideas.
                             </div>
                           </CardContent>
@@ -205,15 +205,15 @@ export default function Home() {
                       {/* Ideation & Planning */}
                       <div className="relative">
                         <div className="absolute -left-3 top-7 w-3 h-3 rounded-full bg-[var(--purple-primary)] border-4 border-white shadow-md"></div>
-                        <Card className="ml-6 bg-white shadow-md">
+                        <Card className="ml-6 bg-white/20 backdrop-blur-sm border border-white/30 shadow-md">
                           <CardContent className="p-6">
-                            <div className="text-sm font-semibold text-[var(--purple-deep)] mb-2">
+                            <div className="text-sm font-semibold text-white/80 mb-2">
                               August 5 - August 12, 2025
                             </div>
-                            <div className="text-xl font-semibold text-[var(--text-primary)] mb-2">
+                            <div className="text-xl font-semibold text-white mb-2">
                               Ideation & Planning
                             </div>
-                            <div className="text-[var(--text-secondary)] text-sm">
+                            <div className="text-white/90 text-sm">
                               Refine your concepts, conduct market research, and develop comprehensive project plans with mentorship support.
                             </div>
                           </CardContent>
@@ -223,15 +223,15 @@ export default function Home() {
                       {/* Building Phase */}
                       <div className="relative">
                         <div className="absolute -left-3 top-7 w-3 h-3 rounded-full bg-[var(--purple-primary)] border-4 border-white shadow-md"></div>
-                        <Card className="ml-6 bg-white shadow-md">
+                        <Card className="ml-6 bg-white/20 backdrop-blur-sm border border-white/30 shadow-md">
                           <CardContent className="p-6">
-                            <div className="text-sm font-semibold text-[var(--purple-deep)] mb-2">
+                            <div className="text-sm font-semibold text-white/80 mb-2">
                               August 15 - August 29, 2025
                             </div>
-                            <div className="text-xl font-semibold text-[var(--text-primary)] mb-2">
+                            <div className="text-xl font-semibold text-white mb-2">
                               Building Phase
                             </div>
-                            <div className="text-[var(--text-secondary)] text-sm">
+                            <div className="text-white/90 text-sm">
                               Two weeks of intensive development. Build your MVP, conduct user testing, and iterate based on feedback.
                             </div>
                           </CardContent>
@@ -241,15 +241,15 @@ export default function Home() {
                       {/* Finals Week */}
                       <div className="relative">
                         <div className="absolute -left-3 top-7 w-3 h-3 rounded-full bg-[var(--purple-primary)] border-4 border-white shadow-md"></div>
-                        <Card className="ml-6 bg-white shadow-md">
+                        <Card className="ml-6 bg-white/20 backdrop-blur-sm border border-white/30 shadow-md">
                           <CardContent className="p-6">
-                            <div className="text-sm font-semibold text-[var(--purple-deep)] mb-2">
+                            <div className="text-sm font-semibold text-white/80 mb-2">
                               September 1 - September 5, 2025
                             </div>
-                            <div className="text-xl font-semibold text-[var(--text-primary)] mb-2">
+                            <div className="text-xl font-semibold text-white mb-2">
                               Finals Week
                             </div>
-                            <div className="text-[var(--text-secondary)] text-sm">
+                            <div className="text-white/90 text-sm">
                               Present your projects to industry experts. Pitch competitions across all three themes with cash prizes and internship opportunities.
                             </div>
                           </CardContent>
@@ -259,15 +259,15 @@ export default function Home() {
                       {/* Winners Announcement */}
                       <div className="relative">
                         <div className="absolute -left-3 top-7 w-3 h-3 rounded-full bg-[var(--purple-primary)] border-4 border-white shadow-md"></div>
-                        <Card className="ml-6 bg-white shadow-md">
+                        <Card className="ml-6 bg-white/20 backdrop-blur-sm border border-white/30 shadow-md">
                           <CardContent className="p-6">
-                            <div className="text-sm font-semibold text-[var(--purple-deep)] mb-2">
+                            <div className="text-sm font-semibold text-white/80 mb-2">
                               September 8, 2025
                             </div>
-                            <div className="text-xl font-semibold text-[var(--text-primary)] mb-2">
+                            <div className="text-xl font-semibold text-white mb-2">
                               Winners Announcement
                             </div>
-                            <div className="text-[var(--text-secondary)] text-sm">
+                            <div className="text-white/90 text-sm">
                               Grand celebration and networking event. Winners receive cash prizes, mentorship programs, and startup incubation opportunities.
                             </div>
                           </CardContent>
