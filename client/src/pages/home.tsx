@@ -55,10 +55,7 @@ export default function Home() {
         <div className="absolute inset-0 bg-gradient-to-br from-[var(--bg-primary)] to-[var(--purple-deep)]"></div>
         
         <div className="relative z-10 max-w-4xl mx-auto">
-          {/* Logo Placeholder */}
-          <div className="w-20 h-20 mx-auto mb-6 rounded-2xl bg-white flex items-center justify-center text-[var(--purple-deep)] text-2xl font-bold shadow-lg">
-            CV
-          </div>
+
           
           {/* Pixelated Main Heading */}
           <h1 className="pixelated-font text-white text-6xl md:text-8xl lg:text-9xl mb-4">
@@ -301,20 +298,20 @@ export default function Home() {
       </main>
 
       {/* Footer */}
-      <footer className="bg-[var(--text-primary)] text-white py-10">
+      <footer className="bg-[var(--purple-deep)] text-white py-10">
         <div className="max-w-6xl mx-auto px-5 text-center">
           <p className="mb-4">&copy; 2025 Creaovibe. All rights reserved.</p>
           <div className="flex justify-center gap-4">
-            <a href="#" className="text-white hover:text-[var(--purple-primary)] transition-colors duration-300" aria-label="Twitter">
+            <a href="#" className="text-white hover:text-gray-300 transition-colors duration-300" aria-label="Twitter">
               <Twitter className="w-6 h-6" />
             </a>
-            <a href="#" className="text-white hover:text-[var(--purple-primary)] transition-colors duration-300" aria-label="LinkedIn">
+            <a href="#" className="text-white hover:text-gray-300 transition-colors duration-300" aria-label="LinkedIn">
               <Linkedin className="w-6 h-6" />
             </a>
-            <a href="#" className="text-white hover:text-[var(--purple-primary)] transition-colors duration-300" aria-label="Instagram">
+            <a href="#" className="text-white hover:text-gray-300 transition-colors duration-300" aria-label="Instagram">
               <Instagram className="w-6 h-6" />
             </a>
-            <a href="#" className="text-white hover:text-[var(--purple-primary)] transition-colors duration-300" aria-label="Discord">
+            <a href="#" className="text-white hover:text-gray-300 transition-colors duration-300" aria-label="Discord">
               <MessageCircle className="w-6 h-6" />
             </a>
           </div>
