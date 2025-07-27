@@ -176,12 +176,12 @@ export default function Home() {
                     <Rocket className="pixel-icon rocket w-6 sm:w-8 h-6 sm:h-8 text-blue-300" />
                     Finale Themes
                   </h4>
-                  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
+                  <div className="grid grid-cols-1 gap-4 sm:gap-6">
                     {/* Edtech Theme */}
                     <Card className="bg-white/20 backdrop-blur-sm border border-white/30 shadow-md hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
                       <CardContent className="p-4 sm:p-6 text-center">
                         <h5 className="text-lg sm:text-xl font-semibold text-white mb-3 flex items-center justify-center gap-2">
-                          <Lightbulb className="w-5 sm:w-6 h-5 sm:h-6 text-yellow-300" />
+                          <Lightbulb className="w-5 sm:w-6 h-5 sm:h-6 text-yellow-400" />
                           Edtech
                         </h5>
                         <p className="text-white/90 text-xs sm:text-sm leading-relaxed">
@@ -194,7 +194,7 @@ export default function Home() {
                     <Card className="bg-white/20 backdrop-blur-sm border border-white/30 shadow-md hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
                       <CardContent className="p-4 sm:p-6 text-center">
                         <h5 className="text-lg sm:text-xl font-semibold text-white mb-3 flex items-center justify-center gap-2">
-                          <Leaf className="w-5 sm:w-6 h-5 sm:h-6 text-green-300" />
+                          <Leaf className="w-5 sm:w-6 h-5 sm:h-6 text-green-400" />
                           Sustainability
                         </h5>
                         <p className="text-white/90 text-xs sm:text-sm leading-relaxed">
@@ -207,7 +207,7 @@ export default function Home() {
                     <Card className="bg-white/20 backdrop-blur-sm border border-white/30 shadow-md hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
                       <CardContent className="p-4 sm:p-6 text-center">
                         <h5 className="text-lg sm:text-xl font-semibold text-white mb-3 flex items-center justify-center gap-2">
-                          <Coins className="w-5 sm:w-6 h-5 sm:h-6 text-yellow-300" />
+                          <Coins className="w-5 sm:w-6 h-5 sm:h-6 text-orange-400" />
                           Fintech
                         </h5>
                         <p className="text-white/90 text-xs sm:text-sm leading-relaxed">
